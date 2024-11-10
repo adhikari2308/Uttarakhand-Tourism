@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+/* Temples Section */
+#temples {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#temples .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 1rem 1.5rem;
+}
+.cardtu{
+    margin-top: 15px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    #temples .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section id="temples">
+        <h2>Famous Temples</h2>
+        <div class="container">
+            <div class="card">
+                <a href="kedarnath.html">
+                <img src="kedarnath.jpeg" alt="Kedarnath Temple"></a>
+                <h3>Kedarnath</h3>
+                <p>One of the most revered temples dedicated to Lord Shiva.</p>
+            </div>
+            <div class="card">
+                <a href="badrinath.html">
+                <img src="badrinath.jpeg" alt="Badrinath Temple"></a>
+                <h3>Badrinath</h3>
+                <p>An important pilgrimage site dedicated to Lord Vishnu.</p>
+            </div>
+            <div class="card">
+                <a href="yamunotri.html">
+                <img src="yamunotri.jpeg" alt="Yamunotri Temple" height="200"></a>
+                <h3>Yamunotri</h3>
+                <p>A sacred site dedicated to Goddess Yamuna.</p>
+            </div>
+            <div class="card">
+                <a href="gangotri.html">
+                <img src="gangotri.jpeg" alt="Gangotri Temple" ></a>
+                <h3>Gangotri</h3>
+                <p>Origin of the River Ganges and seat of the goddess Ganga</p>
+            </div>
+            <div class="card">
+                <a href="haridwar.html">
+                <img src="Haridwar.jpg" alt="Haridwar Temple"></a>
+                <h3>Haridwar</h3>
+                <p>It is one of the first towns where Ganga emerges from the mountains to touch the planes. </p>
+                <div class="cardtu">
+                    <a href="tungnath.html">
+                    <img src="tungnath.jpg" height="200"></a>
+                    <h3>Tungnath</h3>
+                    <p>The Highest Shiv Temple</p>
+                </div>
+    </section>
+</body>
+</html>

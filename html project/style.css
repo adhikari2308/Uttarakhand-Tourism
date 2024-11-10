@@ -1,0 +1,262 @@
+body {
+    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZqbDdtNW1yZzJhMm1tZW1mYXY5Z3BueTY5eHM5d2wxY3F3cDU1MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3og0IIB0CrEPomHBYs/giphy.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+h1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: unset; 
+    text-align: center;
+    transition: none; 
+    border-radius: 0.5rem;    
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    text-align: center;
+    padding: 1em;
+}
+p1{
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    text-align: center; 
+    margin: 0;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 0.5rem;    
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p2{
+    color:white ;
+}
+h2 {
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.section-heading {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    color: transparent;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    box-shadow: 0 10px 40px whitesmoke;
+    border-radius: 0.8rem;
+    width:100%;
+}
+
+nav a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    border-radius: 0.8rem;
+    transition: all 700ms ease-in-out;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1rem);
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    margin: 0.5em 0;
+}
+
+.card p {
+    padding: 0 1em;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    
+}
+
+.learn-more {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.learn-more:hover {
+    background-color: #45a049;
+}
+
+footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+ 
+  .fa-facebook {
+    color: white;
+    text-shadow: whitesmoke;
+  }
+  
+  .fa-twitter {
+    color: white;    text-shadow: whitesmoke;
+  }
+  
+  
+  .fa-instagram {
+    color: white;    text-shadow: whitesmoke;
+  }
+.testimonial-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the testimonials */
+    gap: 2em; /* Space between testimonials */
+    padding: 2em; /* Add padding around the container */
+    background: rgba(255, 255, 255, 0.9); /* Light background for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.testimonial {
+    max-width: 400px; /* Limit the width of each testimonial */
+    background: #fff; /* White background for the testimonial */
+    padding: 2em; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    text-align: center; /* Center align text */
+    position: relative; /* Position relative for pseudo-elements */
+    overflow: hidden; /* Prevent overflow of child elements */
+}
+
+.testimonial:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.testimonial::before {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+    background: rgba(255, 87, 34, 0.1); /* Light neon orange overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.testimonial:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+/* Basic Styling */
+body { font-family: Arial, sans-serif; margin: 1rem; padding: 0; color: #333; }
+header, footer { background-color: transparent; color: black; text-align: center; padding: 1em; }
+nav { display: flex; justify-content: center; background-color: #333; }
+nav a { color: white; padding: 1em; text-decoration: none; }
+nav a:hover { background-color: #4CAF50; }
+#testimonials {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 3em 0; /* Add vertical padding */
+    text-align: center; /* Center align the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 2em 0; /* Space above and below the section */
+}
+
+#testimonials h2 {
+    font-size: 2.5rem; /* Increase font size for the heading */
+    color: #FF5722; /* Neon orange color for the heading */
+    margin-bottom: 1em; /* Space below the heading */
+}
+
+.testimonial-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the testimonials */
+    gap: 2em; /* Space between testimonials */
+    padding: 2em; /* Add padding around the container */
+    background: rgba(255, 255, 255, 0.9); /* Light background for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/* Image Slider */
+
+.slider { position: relative; width: 100%; overflow: hidden; box-shadow: 0 10px 40px whitesmoke; /* Subtle shadow for depth */
+}
+.slides { display: flex; animation: slide 15s infinite;width: 30rem; }
+.slide { min-width: 100%; transition: opacity 1s ease; }
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+/* Card and Container Styling */
+.container { display: grid; grid-template-columns: repeat(5,18rem); justify-content: center; gap:5rem; flex-wrap: wrap; padding: 1em; }
+.card { background: #fff; border-radius: 10px;box-shadow: 0 10px 40px whitesmoke; max-width: 300px; text-align: center; transition: transform 0.3s; }
+.card img { width: 100%; border-radius: 10px 10px 0 0; }
+.card:hover { transform: scale(1.05); }
+
+/* Testimonials */
+#testimonials { background: #f9f9f9; padding: 2em 1em; text-align: center; }
+.testimonial-container { display: flex; justify-content: center; gap: 2em; }
+.testimonial { max-width: 400px; background: #fff; padding: 1em; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+/* Map Section */
+#map { text-align: center; padding: 2em; }
+.map-container iframe { width: 80%; height: 400px; border: none; box-shadow: 0 10px 40px whitesmoke; border-radius: 1rem;}
+
+/* Footer */
+.footer-links, .social-links { display: flex; justify-content: center; gap: 1em; margin-top: 1em; }
+footer a img { width: 30px; height: 30px; }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .testimonial-container { flex-direction: column; align-items: center; }
+    .map-container iframe { width: 100%; }
+}
